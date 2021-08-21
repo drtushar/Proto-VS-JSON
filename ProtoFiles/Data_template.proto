@@ -1,0 +1,22 @@
+syntax="proto3";
+//Run below one folder parent to 'ProtoFiles'
+//protoc.exe -I=ProtoFiles --python_out=Python ProtoFiles/Data_template.proto
+
+message Person {
+    int32 age = 1;
+    string first_name = 2;
+    string last_name = 3;
+    bool is_profile_verified = 4;
+    repeated string phone_numbers = 5;
+    
+    // message Address {
+    //     string address_line_1 = 1;
+    //     string address_line_2 = 2;
+    //     string zip_code = 3;
+    //     string city = 4;
+    //     string state = 5;
+    //     string country = 6;
+    // }
+    
+    // repeated Address addresses = 6;
+}
